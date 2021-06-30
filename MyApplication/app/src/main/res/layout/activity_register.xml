@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#483D8B"
+        android:gravity="center"
+        android:text="欢迎注册app账号"
+        android:textColor="#FFF"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:textColor="#483D8B"
+                android:textSize="15dp"
+                android:text="用户名"/>
+
+            <EditText
+                android:id="@+id/editusernameRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:textColor="#483D8B"
+                android:ems="10"
+                android:hint="请输入用户名"
+                android:inputType="textPersonName"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:textColor="#483D8B"
+                android:textSize="15dp"
+                android:text="密码" />
+
+            <EditText
+                android:id="@+id/editpassword1Register"
+                android:layout_width="wrap_content"
+                android:ems="10"
+                android:hint="请输入密码"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:textColor="#483D8B"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:textColor="#483D8B"
+                android:textSize="15dp"
+                android:text="确认密码" />
+
+            <EditText
+                android:id="@+id/editpassword2Register"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:textColor="#483D8B"
+                android:ems="10"
+                android:hint="再次输入密码"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:textColor="#483D8B"
+                android:textSize="15dp"
+                android:text="密保问题" />
+
+            <EditText
+                android:id="@+id/editmbquestionRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:textColor="#483D8B"
+                android:ems="10"
+                android:hint="请输入密保问题"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:textColor="#483D8B"
+                android:textSize="15dp"
+                android:text="密保答案" />
+
+
+            <EditText
+                android:id="@+id/editmbanswerRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:textColor="#483D8B"
+                android:ems="10"
+                android:hint="请输入密保答案"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="选择身份"
+                android:gravity="center"
+                android:textColor="#483D8B"
+                android:textSize="15dp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="老师"
+                    android:textColor="#483D8B"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#483D8B"
+                    android:text="学生" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirmRegister"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:textSize="24dp"
+        android:textColor="#FFF"
+        android:background="#483D8B"
+        android:layout_gravity="center"
+        android:text="确认注册" />
+
+
+</LinearLayout>

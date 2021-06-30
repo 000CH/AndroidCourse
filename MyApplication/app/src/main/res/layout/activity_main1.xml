@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity1"
+    android:background="#DCDCDC">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="我的计划表"
+        android:textSize="80px"
+        android:layout_height="100dp"
+        android:background="#483D8B"
+        android:textColor="#FFF"/>
+
+    <Button
+        android:id="@+id/buttonback"
+        android:layout_width="94dp"
+        android:layout_height="56dp"
+        android:text="返回>"
+        android:textColor="#483D8B"
+        android:textSize="18sp"
+        app:backgroundTint="#FBFBFB" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"></CalendarView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/addSchedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFF"
+                    android:background="#483D8B"
+                    android:text="添加计划"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <EditText
+                        android:id="@+id/scheduleDetailInput"
+                        android:layout_width="290dp"
+                        android:layout_height="50dp"
+                        android:hint="请输入你的计划内容"
+                        android:background="#FFF"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/checkAdd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="确认添加"
+                        android:textColor="#FFF"
+                        android:background="#483D8B"
+                        android:textSize="16dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/schedule1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="true"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/schedule2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="true"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/schedule3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="true"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/schedule4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="true"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/schedule5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="true"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

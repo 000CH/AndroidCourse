@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="15dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="课程"
+            android:textSize="50px"/>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/calendar"
+            android:id="@+id/calender"/>
+    </LinearLayout>
+  <!-- <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+       <com.example.myapplication.MyScrollViewScroll
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">-->
+
+           <ScrollView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="已订阅课程"/>
+                   <!--<ListView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/class_list" />-->
+                   <androidx.recyclerview.widget.RecyclerView
+                       android:id="@+id/subCourses"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                   </androidx.recyclerview.widget.RecyclerView>
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="学习记录"/>
+
+                   <androidx.recyclerview.widget.RecyclerView
+                       android:id="@+id/hisCourses"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                   </androidx.recyclerview.widget.RecyclerView>
+                   <TextView
+                       android:visibility="gone"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="收藏课程"/>
+                   <!--<ListView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/studying_history"/>-->
+                   <androidx.recyclerview.widget.RecyclerView
+                       android:visibility="gone"
+                       android:id="@+id/starCourses"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                   </androidx.recyclerview.widget.RecyclerView>
+               </LinearLayout>
+
+           </ScrollView>
+      <!-- </com.example.myapplication.MyScrollViewScroll>
+   </RelativeLayout>-->
+
+
+
+</LinearLayout>

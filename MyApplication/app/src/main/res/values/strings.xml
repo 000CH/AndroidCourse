@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">中国大学云班客</string>
+    <string name="txt_home">首页</string>
+    <string name="txt_learn">学习</string>
+    <string name="txt_self">个人主页</string>
+
+
+    <string-array name="background">
+        <item>caihong</item>
+        <item>sky</item>
+    </string-array>
+</resources>

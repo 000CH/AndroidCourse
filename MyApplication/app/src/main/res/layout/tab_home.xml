@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_serach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/search">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/ed"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:hint="请输入搜索内容"
+                    android:textSize="20dp">
+
+                </TextView>
+            </LinearLayout>
+        <ImageButton
+            android:id="@+id/classify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/classif"
+            >
+
+        </ImageButton>
+     </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/mim1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/course_01" />
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="55dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/bl" />
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="53dp"
+                    android:layout_height="73dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/br" />
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    app:backgroundTint="#68615E">
+
+                </Button>
+                <Button
+                    android:id="@+id/bt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    app:backgroundTint="#68615E">
+
+                </Button>
+                <Button
+                    android:id="@+id/bt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    app:backgroundTint="#68615E">
+
+                </Button>
+                <Button
+                    android:id="@+id/bt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    app:backgroundTint="#68615E">
+
+                </Button>
+                <ImageButton
+                    android:id="@+id/interestManager"
+                    android:background="@drawable/interest"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ImageButton>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/showCourses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="名师推荐"
+                android:textSize="20dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/teacher"
+                        android:layout_width="108dp"
+                        android:layout_height="110dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/teacher01" />
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="罗翔"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/dsc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:ellipsize="end"
+                        android:maxLength="10"
+                        android:textSize="10sp"
+                        android:maxLines="3"
+                        android:text="哈尔滨工业大学"
+                        android:gravity="center"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/teacher2"
+                        android:layout_width="108dp"
+                        android:layout_height="107dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/teacher02" />
+                    <TextView
+                        android:id="@+id/name2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="张宇"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:id="@+id/dsc2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="哈尔滨工业大学"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_gravity="left"
+                        android:textSize="10sp"
+
+                        android:maxLines="3"
+                        android:maxLength="10"
+                        android:ellipsize="end"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/teacher3"
+                        android:layout_width="108dp"
+                        android:layout_height="110dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/teacher03" />
+                    <TextView
+                        android:id="@+id/name3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="汤家凤"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:id="@+id/dsc3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="哈尔滨工业大学"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_gravity="left"
+                        android:textSize="10sp"
+                        android:maxLines="3"
+                        android:maxLength="10"
+                        android:ellipsize="end"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+
+

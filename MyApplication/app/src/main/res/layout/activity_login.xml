@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login"
+    android:background="#DCDCDC">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:background="#483D8B"
+        android:textColor="#FFF"
+        android:textSize="30dp"
+        android:text="欢迎使用网课app" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="用户名"
+            android:textColor="#483D8B"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="请输入用户名"
+            android:textColor="#483D8B"
+            android:background="#ffffff"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="密码"
+            android:textColor="#483D8B"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:background="#ffffff"/>
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:textColor="#483D8B"
+            android:background="#ffffff"
+            android:hint="请输入密码"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonfindbackpassword"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="找回密码"
+        android:background="#483D8B"
+        android:textColor="#FFF"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="登录"
+            android:textSize="24dp"
+            android:layout_weight="1"
+            android:textColor="#FFF"
+            android:background="#483D8B"/>
+
+        <Button
+            android:id="@+id/buttonregister"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="注册"
+            android:textSize="24dp"
+            android:textColor="#FFF"
+            android:layout_weight="1"
+            android:background="#483D8B"/>
+    </LinearLayout>
+</LinearLayout>
